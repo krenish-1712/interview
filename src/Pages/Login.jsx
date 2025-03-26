@@ -27,25 +27,6 @@ const Login = () => {
         toast.warning("Please enter all fields!");
         return; 
       }
-  
-    //   try {
-        
-    //     let res = await axios.post("http://localhost:3000/users/login", values);
-    //     let ress = await axios.post("http://localhost:3000/admin/login",values)
-
-    //     if(ress || res){
-            
-    //     toast.success("Login successful! Redirecting...");
-        
-    //     setTimeout(() => {
-    //       navigate("/home");
-    //     }, 2000);
-        
-    // }
-    //   } catch (error) {
-    //     toast.error("User or password is invalid");
-    //     console.error(error);
-    //   }
 
     try {
         let [userResponse, adminResponse] = await Promise.allSettled([
@@ -76,7 +57,7 @@ const Login = () => {
   
 
   let signup = () =>{
-    navigate('/signup')
+    navigate('/signupuser')
   }
 
   return (
