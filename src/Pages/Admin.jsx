@@ -20,7 +20,6 @@ const Admin = () => {
       taskname: '',
     },
     onSubmit: async (values, { resetForm }) => {
-      alert(JSON.stringify(values, null, 2));
       let res;
       
         try {
