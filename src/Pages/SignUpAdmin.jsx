@@ -9,6 +9,7 @@ import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import { VpnLockSharp } from '@mui/icons-material';
 
 
 const SignUpUser = () => {
@@ -26,7 +27,7 @@ const SignUpUser = () => {
       }
     
       try {
-        let res = await axios.post("http://localhost:5000/admin/signup", values);
+        let res = await axios.post("http://localhost:5000/admin/signup", (values.email,values.name,values.password));
         
         toast.success("Sign up successfully!");
     
