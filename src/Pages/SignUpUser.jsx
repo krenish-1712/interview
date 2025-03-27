@@ -28,7 +28,7 @@ const SignUpUser = () => {
       }
     
       try {
-        let res = await axios.post("http://localhost:3000/users/signup", values);
+        let res = await axios.post("http://localhost:5000/users/signup", values);
        console.log("helloo");
        
         

@@ -28,7 +28,7 @@ const User = () => {
 
   let getdata = async (props) => {
     try {
-      let res = await axios.get("http://localhost:3000/admintask/gettask");
+      let res = await axios.get("http://localhost:5000/admintask/gettask");
       settask(res.data.data);
 
     } catch (error) {

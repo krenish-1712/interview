@@ -23,7 +23,7 @@ const Admin = () => {
       let res;
       
         try {
-          res = await axios.post("http://localhost:3000/admintask/createtask", { taskname: values.taskname });
+          res = await axios.post("http://localhost:5000/admintask/createtask", { taskname: values.taskname });
 
         } catch (error) {
 
