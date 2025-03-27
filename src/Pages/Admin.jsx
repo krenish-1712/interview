@@ -92,7 +92,7 @@ const Admin = () => {
                   value={formik.values.taskname}
                 />
                 <DialogActions>
-                  <Button type="submit" onSubmit={onsubmit} style={{ backgroundColor: '#1976D2', color: 'white' }} className='px-3'>Submit</Button>
+                  <Button type="submit" style={{ backgroundColor: '#1976D2', color: 'white' }} className='px-3'>Submit</Button>
                 </DialogActions>
               </DialogContent>
             </form>
@@ -100,7 +100,7 @@ const Admin = () => {
         </Box>
 
         <table width='100%' style={{ textAlign: 'center' }}>
-          <thead style={{ backgroundColor: '#1976D2', height: '60px', color: 'white' }}>
+          <thead style={{ backgroundColor: '#1976D2', height: '60px', color: 'black' }}>
             <tr>
               <td>No</td>
               <td>Task Name</td>
