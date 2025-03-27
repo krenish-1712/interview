@@ -30,7 +30,7 @@ const SignUpUser = () => {
       try {
         console.log('hiiiiii');
         
-        let res = await axios.post("http://localhost:5000/users/signup",values);        
+        let res = await axios.post("https://interviewbackend-5cb7.onrender.com/users/signup",values);        
         toast.success("Sign up successfully!");
     
         setTimeout(() => {

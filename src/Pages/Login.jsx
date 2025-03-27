@@ -30,8 +30,8 @@ const Login = () => {
 
     try {
         let [userResponse, adminResponse] = await Promise.allSettled([
-          axios.post("http://localhost:5000/users/login",values),
-          axios.post("http://localhost:5000/admin/login",values),
+          axios.post("https://interviewbackend-5cb7.onrender.com/users/login",values),
+          axios.post("https://interviewbackend-5cb7.onrender.com/admin/login",values),
         ]);
       
         if (userResponse.status === "fulfilled" && userResponse.value.status === 200) {

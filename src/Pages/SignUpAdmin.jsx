@@ -27,7 +27,7 @@ const SignUpUser = () => {
       }
     
       try {
-        let res = await axios.post("http://localhost:5000/admin/signup",values);
+        let res = await axios.post("https://interviewbackend-5cb7.onrender.com/admin/signup",values);
         
         toast.success("Sign up successfully!");
     
