@@ -27,7 +27,7 @@ const SignUpUser = () => {
       }
     
       try {
-        let res = await axios.post("http://localhost:5000/admin/signup", (values.email,values.name,values.password));
+        let res = await axios.post("http://localhost:5000/admin/signup",values);
         
         toast.success("Sign up successfully!");
     
