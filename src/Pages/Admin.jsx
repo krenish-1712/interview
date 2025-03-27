@@ -50,7 +50,7 @@ const Admin = () => {
 
   let getdata = async (props) => {
     try {
-      let res = await axios.get("https://interviewhub-3ro7.onrender.com/catagory/");
+      let res = await axios.get("http://localhost:3000/admintask/gettask");
       settask(res.data.data);
 
     } catch (error) {
@@ -65,6 +65,7 @@ const Admin = () => {
     <div>
 
         <Box sx={{ width: '100%', display: 'flex', gap: '15px', marginBottom: '20px' }}>
+          <h1>Admin</h1>
           <Button onClick={() => handleClickOpen()} style={{ backgroundColor: '#1976D2', color: 'white', width: '15%' }}>
             Add Task
           </Button>
